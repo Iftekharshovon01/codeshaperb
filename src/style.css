@@ -195,6 +195,8 @@
     width: 200px;
     transition-duration: .7s;
     transition-delay: .2s;
+    z-index: 99;
+    background-color: #ffff;
 
 }
 
@@ -214,7 +216,7 @@ li.nav-page-nested-single:hover {
 }
 
 .nav-pages-single:hover .nav-page-nested {
-    opacity: 1;
+    opacity: 12;
     visibility: visible;
 
 }
@@ -240,3 +242,54 @@ li.nav-page-nested-single:hover {
 .nav-offer a:hover {
     color: #DC2626;
 }
+
+.banner-text {
+    max-width: 450px;
+}
+
+.banner-text h6 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    color: #18181B;
+    position: relative;
+    padding-left: 40px;
+}
+
+.banner-text h6::before {
+    content: '';
+    top: 22px;
+    position: absolute;
+    left: 0px;
+    width: 39px;
+    height: 2px;
+    background-color: #eb0707;
+}
+
+.banner-text h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 150%;
+    color: #18181B;
+}
+
+.banner-text a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-weight: 700;
+    font-size: 20px;
+    background: #18181B;
+    color: #F5F5F4;
+    text-decoration: none;
+    top: 60px;
+
+}
+
+.banner-text a:hover {
+
+    color: #F5F5F4;
+}
+
+.swiper-button-prev::after {}
