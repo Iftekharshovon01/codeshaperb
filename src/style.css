@@ -128,7 +128,6 @@
 }
 
 .nav-pages-single {
-
     position: relative;
     cursor: pointer;
 
@@ -139,7 +138,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    padding: 0 11px 0 0;
+    padding: 0 11px 0 2px;
 
 
 }
@@ -155,15 +154,14 @@
     position: absolute;
     left: 0;
     bottom: -5px;
-    width: 20%;
     height: 2px;
     background-color: #eb0707;
-    opacity: 0;
-    transition: .2s ease-in;
+    transition: .4s ease-in;
 }
 
 .nav-pages-single:hover::after {
-    opacity: 1;
+    width: 30%;
+
 }
 
 .nav-pages-single {
@@ -176,27 +174,50 @@
 }
 
 .nav-pages-single:last-child a {
-    padding-right: 0px;
+    padding-right: 5px;
 }
 
-.nav-pages-single ul {
+.nav-page-nested {
     list-style: none;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     padding-left: 0px;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
+    margin-top: 10px;
+    box-shadow: 0px 10px 35px 0px #929297;
+    border: none;
+    padding: 20px 0;
+    border-radius: 5px;
+    width: 200px;
+    transition-duration: .7s;
+    transition-delay: .2s;
 
 }
 
-.nav-pages-single:hover ul {
-    display: block;
+.nav-page-nested-single {
+    padding: 5px 35px;
+    background-color: rgb(255, 255, 255);
 
 }
 
+li.nav-page-nested-single:hover {
+    background: #929297;
+    padding-left: 10px;
+    border-bottom: 1px solid;
+    color: white;
+    transition-duration: .7s;
+    border: none;
+}
 
+.nav-pages-single:hover .nav-page-nested {
+    opacity: 1;
+    visibility: visible;
+
+}
 
 .nav-offer {
     display: flex;
