@@ -94,7 +94,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #71717A;
+    color: rgba(113, 113, 122, 0.5);
 }
 
 .head-shopping {
@@ -121,6 +121,7 @@
 }
 
 .nav-pages {
+    font-family: 'Libre Baskerville';
     list-style: none;
     display: flex;
     padding-left: 0px;
@@ -193,8 +194,8 @@
     padding: 20px 0;
     border-radius: 5px;
     width: 200px;
-    transition-duration: .7s;
-    transition-delay: .2s;
+    transition-duration: .1s;
+    transition-delay: 0.1s;
     z-index: 99;
     background-color: #ffff;
 
@@ -207,11 +208,11 @@
 }
 
 li.nav-page-nested-single:hover {
-    background: #929297;
-    padding-left: 10px;
+    background: #e7e3e3;
+    padding-left: 30px;
     border-bottom: 1px solid;
-    color: white;
-    transition-duration: .7s;
+    color: #18181B;
+    transition-duration: .5s;
     border: none;
 }
 
@@ -222,6 +223,7 @@ li.nav-page-nested-single:hover {
 }
 
 .nav-offer {
+    font-family: 'Libre Baskerville';
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -244,7 +246,11 @@ li.nav-page-nested-single:hover {
 }
 
 .banner-text {
-    max-width: 450px;
+    position: absolute;
+    max-width: 500px;
+    padding-left: 30px;
+    top: 110px;
+    display: inline-block;
 }
 
 .banner-text h6 {
@@ -263,27 +269,31 @@ li.nav-page-nested-single:hover {
     top: 22px;
     position: absolute;
     left: 0px;
-    width: 39px;
+    width: 30px;
     height: 2px;
     background-color: #eb0707;
 }
 
 .banner-text h1 {
+    font-family: 'Libre Baskerville';
     font-weight: 700;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 150%;
     color: #18181B;
 }
 
 .banner-text a {
+    position: absolute;
+    font-family: 'Libre Baskerville';
     display: inline-block;
     padding: 15px 30px;
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 17px;
     background: #18181B;
     color: #F5F5F4;
     text-decoration: none;
-    top: 60px;
+    margin-top: 30px;
+    letter-spacing: 2px;
 
 }
 
@@ -292,4 +302,57 @@ li.nav-page-nested-single:hover {
     color: #F5F5F4;
 }
 
-.swiper-button-prev::after {}
+.swiper-pagination {
+    transform: rotate(0deg) !important;
+    width: 0% !important;
+    bottom: 75px !important;
+}
+
+.swiper-button-prev {
+    color: #71717A !important;
+    left: 0px !important;
+    top: 90% !important;
+}
+
+.swiper-button-prev::after {
+    font-size: 20px !important;
+}
+
+.swiper-button-next {
+    left: 20px !important;
+    top: 90% !important;
+    color: #71717A !important;
+}
+
+.swiper-button-next::after {
+    font-size: 20px !important;
+}
+
+span.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background: #71717A;
+}
+
+
+
+.banner-image-area {
+    padding-right: 100px;
+    position: relative;
+}
+
+.banner-image-area h1 {
+    font-family: 'Libre Baskerville';
+    font-weight: 300;
+    font-size: 100px;
+    line-height: 230px;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 80px;
+    right: -100px;
+    transform-origin: bottom;
+    transform: translate(0%) rotate(90deg);
+    text-shadow: 1px 1px 0 rgba(113, 113, 122, 0.5), 1px -1px 0 rgba(113, 113, 122, 0.5), 0px 1px 0 rgba(113, 113, 122, 0.5), -1px -1px 0 rgba(113, 113, 122, 0.5), 1px 0px 0 rgba(113, 113, 122, 0.5), 0px 1px 0 rgba(113, 113, 122, 0.5), 0px 0px 0 rgba(113, 113, 122, 0.5), 0px -1px 0 rgba(113, 113, 122, 0.5);
+    color: #ecfeff;
+    opacity: 0.4;
+}

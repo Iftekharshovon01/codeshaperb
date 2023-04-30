@@ -1,5 +1,6 @@
 import React from 'react';
 import girl from '../../../Assets/img/Banner/pretty-girl.png';
+import winter from '../../../Assets/img/Banner/WINTER.png';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -34,14 +35,49 @@ const Banner = () => {
                                 </div>
 
                             </Col>
-                            <Col md={4} className='d-flex'><img src={girl} alt="" /></Col>
+                            <Col md={6}><div className="banner-image-area">
+                                <img src={girl} alt="" />
+                                <h1>WINTER</h1>
+                            </div></Col>
                         </Row>
                     </SwiperSlide>
-                    <SwiperSlide>Slide 2</SwiperSlide>
-                    <SwiperSlide>Slide 3</SwiperSlide>
+                    <SwiperSlide >
+                        <Row className='align-items-center'>
+                            <Col md={6}>
+                                <div className="banner-text">
+                                    <h6>AMEY Winter Collction</h6>
+                                    <h1>Buy Trendy Girls
+                                        Clothing</h1>
+                                    <Link>Shop Now</Link>
+                                </div>
+
+                            </Col>
+                            <Col md={6}><div className="banner-image-area">
+                                <img src={girl} alt="" />
+                                <h1>WINTER</h1>
+                            </div></Col>
+                        </Row>
+                    </SwiperSlide>
+                    <SwiperSlide >
+                        <Row className='align-items-center'>
+                            <Col md={6}>
+                                <div className="banner-text">
+                                    <h6>AMEY Winter Collction</h6>
+                                    <h1>Buy Trendy Girls
+                                        Clothing</h1>
+                                    <Link>Shop Now</Link>
+                                </div>
+
+                            </Col>
+                            <Col md={6}><div className="banner-image-area">
+                                <img src={girl} alt="" />
+                                <h1>WINTER</h1>
+                            </div></Col>
+                        </Row>
+                    </SwiperSlide>
                 </Swiper>
             </Container>
-        </div>
+        </div >
     );
 };
 
