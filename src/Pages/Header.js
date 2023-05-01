@@ -4,10 +4,10 @@ import Nav from './Home/Navbar/Nav';
 
 const Header = () => {
     return (
-        <div>
+        <>
             <Topbar></Topbar>
             <Nav></Nav>
-        </div>
+        </>
     );
 };
 

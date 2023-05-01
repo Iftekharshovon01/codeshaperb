@@ -17,8 +17,8 @@ const Searchbar = () => {
         window.location.href = `tel:${phoneNumber}`;
     };
     return (
-        <>
-            <Container>
+        <div className='boxshadow'>
+            <Container >
                 <Row className='align-items-center justify-content-between py-4'>
                     <Col md={2}>
                         <div className="head-logo">
@@ -67,7 +67,7 @@ const Searchbar = () => {
                     </Col>
                 </Row>
             </Container>
-        </>
+        </div>
     );
 };
 
