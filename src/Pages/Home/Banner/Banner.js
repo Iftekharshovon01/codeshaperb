@@ -1,6 +1,5 @@
 import React from 'react';
 import girl from '../../../Assets/img/Banner/pretty-girl.png';
-import winter from '../../../Assets/img/Banner/WINTER.png';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -10,20 +9,39 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeftLong, faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 
 const Banner = () => {
     return (
-        <div style={{ background: " #ECFEFF", }}>
+        <div className='banner-wrapper'>
             <Container >
+                <div className="swiper-button-prev">
+                    <FontAwesomeIcon icon={faArrowLeftLong} />
+
+                </div>
+                <div className="swiper-button-next">
+                    <FontAwesomeIcon icon={faArrowRightLong} />
+                </div>
                 <Swiper
                     cssMode={true}
-                    navigation={true}
+                    navigation={
+
+                        {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                            disabledClass: "swiper-button-disabled"
+                        }
+
+
+                    }
                     pagination={true}
                     mousewheel={true}
                     keyboard={true}
                     modules={[Navigation, Pagination, Mousewheel, Keyboard]}
                     className="mySwiper"
                 >
+
                     <SwiperSlide >
                         <Row className='align-items-center'>
                             <Col md={6}>
@@ -40,6 +58,7 @@ const Banner = () => {
                                 <h1>WINTER</h1>
                             </div></Col>
                         </Row>
+
                     </SwiperSlide>
                     <SwiperSlide >
                         <Row className='align-items-center'>
@@ -76,6 +95,7 @@ const Banner = () => {
                         </Row>
                     </SwiperSlide>
                 </Swiper>
+
             </Container>
         </div >
     );
