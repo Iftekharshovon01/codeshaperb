@@ -14,8 +14,8 @@ import { faArrowLeftLong, faArrowRightLong } from '@fortawesome/free-solid-svg-i
 
 const Banner = () => {
     return (
-        <div className='banner-wrapper'>
-            <Container >
+        <div className='banner-bg'>
+            <Container className='banner-wrapper'>
                 <div className="swiper-button-prev">
                     <FontAwesomeIcon icon={faArrowLeftLong} />
 

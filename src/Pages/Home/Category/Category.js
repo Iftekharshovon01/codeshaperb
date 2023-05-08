@@ -40,7 +40,7 @@ const Category = () => {
                                             HOT LIST
                                         </h4>
                                         <h1 className='collection-couple'><span>Couple</span><br></br><span>Collection</span></h1>
-                                        <Link to={'/'} className='button-white'>Explore Now</Link>
+                                        <Link to={'/'} className='button-black'>Explore Now</Link>
                                     </div>
 
                                     <div className="background-text-couple">

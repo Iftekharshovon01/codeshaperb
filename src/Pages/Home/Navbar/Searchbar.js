@@ -17,15 +17,15 @@ const Searchbar = () => {
         window.location.href = `tel:${phoneNumber}`;
     };
     return (
-        <div className='boxshadow'>
+        <div className='search-wrapper '>
             <Container >
                 <Row className='align-items-center justify-content-between py-4'>
-                    <Col md={2}>
+                    <Col md={2} sm={6}>
                         <div className="head-logo">
                             <Link to={'/'}><img className='w-100' src={logo} alt="" /></Link>
                         </div>
                     </Col>
-                    <Col md={5}>
+                    <Col md={5} className='d-md-block d-xs-none d-sm-none'>
                         <div className="head-search">
                             <div className="search-container">
                                 <input className='search-input'
@@ -40,7 +40,7 @@ const Searchbar = () => {
                             </button>
                         </div>
                     </Col>
-                    <Col md={3}>
+                    <Col md={3} className=' d-md-block d-xs-none d-sm-none'>
                         <div className="head-service">
                             <div className="head-service-logo">
                                 <a href='.'><FontAwesomeIcon icon={faHeadset} className='head-service-logo-icon' /></a>
@@ -51,7 +51,7 @@ const Searchbar = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col md={2}>
+                    <Col md={2} sm={6}>
                         <div className="head-shopping">
                             <div className="head-shopping-wish">
                                 <Link><FontAwesomeIcon icon={faHeart} className='head-shoping-icon' /></Link>

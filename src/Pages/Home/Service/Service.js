@@ -7,7 +7,7 @@ const Service = () => {
     return (
         <div className='service'>
             <Container>
-                <ul className='d-flex justify-content-between'>
+                <ul className='service-list'>
                     <li >
                         <div className='service-single'>
                             <FontAwesomeIcon className='service-icon' icon={faTruck} />
