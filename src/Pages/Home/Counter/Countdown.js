@@ -55,7 +55,7 @@ const Countdown = () => {
                                 <Link className='button-white'>Explore Now</Link>
                             </div>
                         </Col>
-                        <Col lg={6} className='d-md-none'>
+                        <Col lg={6} md={6}>
                             <div className="counter-img">
                                 <div className="counter-img-shop">
                                     <img src={counter} alt="" />
