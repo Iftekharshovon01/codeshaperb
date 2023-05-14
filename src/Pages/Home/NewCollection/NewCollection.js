@@ -8,11 +8,11 @@ const NewCollection = () => {
         <Container>
             <h3 className='new-collection-head'>AMEY New Collections</h3>
             <h1 className='new-collection-header'>New Products</h1>
-            <Row className='mt-5'>
-                <Col md={3}><ProductCard></ProductCard></Col>
-                <Col md={3}><ProductCard></ProductCard></Col>
-                <Col md={3}><ProductCard></ProductCard></Col>
-                <Col md={3}><ProductCard></ProductCard></Col>
+            <Row className='mt-5 justify-content-center'>
+                <Col lg={4} md={5} sm={6} xs={12}><ProductCard></ProductCard></Col>
+                <Col lg={4} md={5} sm={6} xs={12}><ProductCard></ProductCard></Col>
+                <Col lg={4} md={5} sm={6} xs={12}><ProductCard></ProductCard></Col>
+                <Col lg={4} md={5} sm={6} xs={12}><ProductCard></ProductCard></Col>
             </Row>
             <div className='d-flex justify-content-center mt-5'>
                 <Link className='button-white'>Show More</Link>

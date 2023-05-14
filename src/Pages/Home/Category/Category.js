@@ -11,7 +11,7 @@ const Category = () => {
             <div className="category">
                 <Container>
                     <Row >
-                        <Col md={6}>
+                        <Col lg={6} md={12}>
                             <div className="men">
                                 <div className="image-wrapper-men">
                                     <img src={men} alt="" />
@@ -29,7 +29,7 @@ const Category = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col md={6}>
+                        <Col lg={6} md={12}>
                             <div className="others">
                                 <div className="couple">
                                     <div className="image-wrapper-couple">

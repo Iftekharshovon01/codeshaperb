@@ -47,8 +47,7 @@ const Banner = () => {
                             <Col md={6}>
                                 <div className="banner-text">
                                     <h6>AMEY Winter Collction</h6>
-                                    <h1>Buy Trendy Girls
-                                        Clothing</h1>
+                                    <h1>Buy Trendy Girls Clothing</h1>
                                     <Link>Shop Now</Link>
                                 </div>
 
@@ -71,7 +70,7 @@ const Banner = () => {
                                 </div>
 
                             </Col>
-                            <Col md={6}><div className="banner-image-area">
+                            <Col md={6} className='d-{md,sm,xs,lg}-block d-none'><div className="banner-image-area">
                                 <img src={girl} alt="" />
                                 <h1>WINTER</h1>
                             </div></Col>

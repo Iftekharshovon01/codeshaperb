@@ -10,28 +10,6 @@ const ProductCard = () => {
 
     return (
         <>
-            {/* <div className='card-product mx-1'>
-                <div className='card-img'>
-                    <img className='w-100' src={redCotton} alt="" />
-                </div>
-                <div className='card-text'>
-                    <div className='category-icon' >
-                        <p className="card-category">Men</p>
-                        <p className='card-icon'><FontAwesomeIcon icon={faHeart} /></p>
-                    </div>
-                    <h3>Red Cotton Shirt</h3>
-                    <h3>$30</h3>
-                </div>
-                <div className="card-product-hover">
-                    <div className="hover-icon">
-                        <a href='.'><FontAwesomeIcon icon={faEye} /></a>
-                        <a href='.'><FontAwesomeIcon icon={faArrowsRotate} /></a>
-                    </div>
-
-                    <Link className='button-black-product'>Add to cart <FontAwesomeIcon icon={faCartShopping} /></Link>
-
-                </div>
-            </div> */}
             <div className="card-product">
                 <div className="card-product-img-area">
                     <img className='w-100' src={redCotton} alt="productImage" />
@@ -53,7 +31,6 @@ const ProductCard = () => {
                     <h6>$30</h6>
                 </div>
             </div>
-
         </>
     );
 };

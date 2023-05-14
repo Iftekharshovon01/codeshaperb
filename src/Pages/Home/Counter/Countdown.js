@@ -40,7 +40,7 @@ const Countdown = () => {
             <Container>
                 <div className="counter-wrapper">
                     <Row>
-                        <Col md={6}>
+                        <Col lg={6} md={12}>
                             <div className="counter-header-text">
                                 <h3>WINTER DEAL 20% OFF</h3>
                                 <h1>Best Deal For You</h1>
@@ -55,16 +55,16 @@ const Countdown = () => {
                                 <Link className='button-white'>Explore Now</Link>
                             </div>
                         </Col>
-                        <Col md={6}></Col>
+                        <Col lg={6} className='d-md-none'>
+                            <div className="counter-img">
+                                <div className="counter-img-shop">
+                                    <img src={counter} alt="" />
+                                </div>
+                            </div>
+                        </Col>
                     </Row>
                 </div>
-
             </Container>
-            <div className="counter-img">
-                <div className="counter-img-shop">
-                    <img src={counter} alt="" />
-                </div>
-            </div>
             <p><span className='background-text-counter-winter'>WINTER</span><span className='background-text-counter-sale'>SALE</span></p>
         </div>
     );

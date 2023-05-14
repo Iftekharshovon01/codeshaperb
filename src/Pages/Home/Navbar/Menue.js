@@ -34,9 +34,9 @@ const Menue = () => {
                             <ul className='nav-pages'>
                                 <li className='nav-pages-single'><a href='.'>Home<FontAwesomeIcon icon={faChevronDown} className='icon' /></a>
                                     <ul className='nav-page-nested'>
-                                        <li className='nav-page-nested-single'>Shirts</li>
-                                        <li className='nav-page-nested-single'>T-Shirts</li>
-                                        <li className='nav-page-nested-single'>Trowsers</li>
+                                        <li className='nav-page-nested-single'>Winter</li>
+                                        <li className='nav-page-nested-single'>Summer</li>
+                                        <li className='nav-page-nested-single'>Autumn</li>
                                     </ul>
                                 </li>
                                 <li className='nav-pages-single'><a href='.'>Shop<FontAwesomeIcon icon={faChevronDown} className='icon' /></a>
