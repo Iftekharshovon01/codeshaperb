@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import redCotton from '../../../../Assets/img/newCollection/red-cotton-shirt.png';
+import redCotton from '../../Assets/img/newCollection/red-cotton-shirt.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faHeart } from '@fortawesome/free-regular-svg-icons';
 import { faArrowsRotate, faCartShopping } from '@fortawesome/free-solid-svg-icons';

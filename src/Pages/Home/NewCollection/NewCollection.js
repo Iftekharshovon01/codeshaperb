@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import ProductCard from './ProductCard/ProductCard';
+import ProductCard from '../../../Component/ProductCard/ProductCard';
 import { Link } from 'react-router-dom';
 
 const NewCollection = () => {

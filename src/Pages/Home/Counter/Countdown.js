@@ -41,18 +41,20 @@ const Countdown = () => {
                 <div className="counter-wrapper">
                     <Row>
                         <Col lg={6} md={12}>
-                            <div className="counter-header-text">
-                                <h3>WINTER DEAL 20% OFF</h3>
-                                <h1>Best Deal For You</h1>
-                            </div>
-                            <div className="counter-time">
-                                <p className='counter-time-single'><span className='number'>{timeLeft.days}</span><span className='text'>Days</span></p>
-                                <p className='counter-time-single'><span className='number'>{timeLeft.hours}</span><span className='text'>Hours</span></p>
-                                <p className='counter-time-single'><span className='number'>{timeLeft.minutes}</span><span className='text'>Mins</span></p>
-                                <p className='counter-time-single'><span className='number'>{timeLeft.seconds}</span><span className='text'>Secs</span></p>
-                            </div>
-                            <div className='d-flex justify-content-center mt-2'>
-                                <Link className='button-white'>Explore Now</Link>
+                            <div className='counter-text-wrapper'>
+                                <div className="counter-header-text">
+                                    <h3>WINTER DEAL 20% OFF</h3>
+                                    <h1>Best Deal For You</h1>
+                                </div>
+                                <div className="counter-time">
+                                    <p className='counter-time-single'><span className='number'>{timeLeft.days}</span><span className='text'>Days</span></p>
+                                    <p className='counter-time-single'><span className='number'>{timeLeft.hours}</span><span className='text'>Hours</span></p>
+                                    <p className='counter-time-single'><span className='number'>{timeLeft.minutes}</span><span className='text'>Mins</span></p>
+                                    <p className='counter-time-single'><span className='number'>{timeLeft.seconds}</span><span className='text'>Secs</span></p>
+                                </div>
+                                <div className='d-flex justify-content-center mt-2'>
+                                    <Link className='button-white'>Explore Now</Link>
+                                </div>
                             </div>
                         </Col>
                         <Col lg={6} md={6}>

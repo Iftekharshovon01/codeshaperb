@@ -1,5 +1,4 @@
-import { faBagShopping, faBars, faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import React, { useState } from 'react';
 import { Offcanvas } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -108,7 +107,7 @@ const Sidebar = () => {
 
             <Offcanvas show={show} onHide={handleClose} >
                 <Offcanvas.Header closeButton>
-                    <Offcanvas.Title>Responsive offcanvas</Offcanvas.Title>
+                    <Offcanvas.Title style={{ color: '#71717A', }}>Menu</Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                     <MobileMenu menus={menus}></MobileMenu>
