@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import { Keyboard, Mousewheel, Navigation, Pagination } from 'swiper';
 import ProductCard from '../../../Component/ProductCard/ProductCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faArrowLeftLong, faArrowRight, faArrowRightLong, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -19,7 +19,7 @@ const Trending = () => {
             <div className='trending-wrapper'>
                 <Container >
                     <div className="trending-text-wrapper">
-                        <h>AMEY Trending Collections</h>
+                        <h1>AMEY Trending Collections</h1>
                         <h1>Trending Products</h1>
                     </div>
                     <div className="trending-slider-wrapper">

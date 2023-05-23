@@ -1,3 +1,4 @@
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './App.css';
 import './Assets/css/style.css';
 import { RouterProvider } from 'react-router-dom';
