@@ -1530,7 +1530,7 @@ img {
 
 /*=====hotdeal=====*/
 .hotdeal-wrapper {
-  margin: 30px 0;
+  margin: 70px 0;
 
   .hotdeal-text-wrapper {
     display: flex;
@@ -1591,24 +1591,37 @@ img {
       opacity: 0.5;
     }
     .carsoul-wrapper {
-      padding: 25px 0 5px 0px;
+      padding: 100px 0 30px 0px;
       background-color: #e0f2fe;
       .carousel {
         .slide {
           min-width: 100%;
-          margin: 3px;
+          margin: 3px 0;
           position: relative;
           text-align: center;
-          top: 70px !important;
+          // top: 80px !important;
         }
         .slider-wrapper {
           overflow: hidden;
           margin: auto;
-          width: 50% !important;
+          width: 60% !important;
           transition: height 0.15s ease-in;
         }
         .carsoul-slider {
           width: 96% !important;
+        }
+        .thumbs {
+          transition: all 0.15s ease-in;
+          transform: translate3d(85px, 15px, 0) !important;
+          .thumb {
+            border: 0px solid #ffffff00 !important;
+            &:hover {
+              border: 1px solid #ffffffa2 !important;
+            }
+          }
+          .selected {
+            border: 1px solid #ffffffa2 !important;
+          }
         }
       }
     }
@@ -1617,7 +1630,7 @@ img {
 
 /*====featureProductdetails=====*/
 .featureProduct {
-  padding-top: 66px;
+  padding-top: 61px;
   background-color: #f5f5f4;
   text-align: center;
   .details-featureProduct {
@@ -1678,20 +1691,35 @@ img {
       h1 {
         font-family: "Raleway";
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 16px;
-        line-height: 30px;
+        line-height: 20px;
         text-align: center;
         color: #18181b;
       }
       .counter-section {
-        padding-bottom: 10px;
+        padding-bottom: 13px;
+        .counter-time {
+          .counter-time-single {
+            padding: 5px 10px;
+            font-size: 20px;
+            background: #f5f5f4;
+            .number {
+              font-size: 14px;
+              line-height: 17px;
+            }
+            .text {
+              font-size: 16px;
+              line-height: 17px;
+            }
+          }
+        }
       }
       .color-size-selector {
         padding: 20px 0;
         margin: 0 20px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         .color-selector {
           margin: 0 20px;
           p {
@@ -1703,7 +1731,7 @@ img {
             border-radius: 50%;
             position: relative;
             border: none;
-            margin-right: 5px;
+            margin-right: 8px;
 
             input {
               opacity: 0;
@@ -1747,7 +1775,7 @@ img {
             border-radius: 50%;
             position: relative;
             border: none;
-            margin-left: 5px;
+            margin-left: 8px;
             font-size: 10px;
 
             input {
@@ -1776,11 +1804,12 @@ img {
       }
     }
     .add-to-cart-wrapper {
+      padding: 0 0 20px 0;
       display: flex;
       justify-content: center;
       align-items: center;
       .quantity-wrapper {
-        border: 1px solid black;
+        border: 1px groove #71717a !important;
         padding: 10px 10px;
         margin: 20px 3px;
 
@@ -1790,6 +1819,7 @@ img {
           background-color: transparent;
           padding: 0px 5px;
           margin: 0px;
+          color: #71717a;
 
           &:focus {
             outline: none;
@@ -1799,11 +1829,36 @@ img {
 
         label {
           color: #18181b;
+          font-weight: 600;
+          padding: 0 10px 1px 10px;
         }
       }
       .button-white {
         padding: 9px 20px;
         margin: 20px 3px;
+        border: 1px groove #71717a !important;
+        color: #71717a;
+        stroke: #71717a;
+
+        &:hover {
+          background-color: #18181b;
+          svg {
+            stroke: #ffff;
+          }
+        }
+        &:focus {
+          background: transparent;
+        }
+        &:focus-visible {
+          background: transparent;
+        }
+      }
+      .button-black {
+        padding: 9px 20px;
+        margin: 20px 3px;
+        &:hover {
+          background: transparent;
+        }
         &:focus {
           background: transparent;
         }
