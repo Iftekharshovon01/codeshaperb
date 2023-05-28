@@ -18,19 +18,7 @@ import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons
 import FeatureProductdetails from "../../../Component/FeatureProductdetails/FeatureProductdetails";
 import MyCarousel from "../../../Component/ImageCarosoul/MyCarousel";
 
-// const sliders = [
-//     {
-//         id: "01",
-//         productDetails: [],
-//         img: [],
-//     },
-//     {
-//         id: "02",
-//         productDetails: [],
-//         img: [],
-//     },
 
-// ];
 
 export default function HotDeal() {
 
@@ -53,14 +41,12 @@ export default function HotDeal() {
                                 prevEl: ".swiper-hotdeal-prev",
                                 disabledClass: "swiper-hotdeal-disabled"
                             }
-
-
                         }
                         pagination={false}
                         mousewheel={true}
                         keyboard={true}
                         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-                        className="mySwiper w-100"
+                        className="mySwiper w-100" style={{ height: '100%', }}
                     >
                         {/* {sliders.map((slider) => {
                             return <SwiperSlide key={slider.id} >
@@ -75,20 +61,18 @@ export default function HotDeal() {
                             </SwiperSlide>
                         })} */}
                         <SwiperSlide >
-                            <Row className='align-items-center'>
-                                <Col md={6} className="p-0">
-                                    <div className="carsoul-wrapper">
-                                        <MyCarousel />
-                                    </div>
-                                </Col>
-                                <Col md={6} className="p-0">
+                            <div className="slider-component-wrapper">
+                                <div className="carsoul-wrapper py-5">
+                                    <MyCarousel />
+                                </div>
+                                <div className="featureProduct-wrapper">
                                     <FeatureProductdetails />
-                                </Col>
-                            </Row>
+                                </div>
+                            </div>
                         </SwiperSlide>
                     </Swiper>
                 </Container>
-            </div>
+            </div >
 
         </>
     );

@@ -7,6 +7,7 @@ import Countdown from '../Counter/Countdown';
 import Trending from '../Trending/Trending';
 import Promotion from '../Promotion/Promotion';
 import HotDeal from '../HotDeal/HotDeal';
+import Testimonial from '../Testimonial/Testimonial';
 
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
             <Trending></Trending>
             <Promotion></Promotion>
             <HotDeal></HotDeal>
+            <Testimonial/>
         </>
     );
 };

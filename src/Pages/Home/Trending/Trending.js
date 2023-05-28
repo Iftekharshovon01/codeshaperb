@@ -10,6 +10,7 @@ import { Keyboard, Mousewheel, Navigation, Pagination } from 'swiper';
 import ProductCard from '../../../Component/ProductCard/ProductCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import Headertext from '../../../Component/Headertext/Headertext';
 
 
 
@@ -18,15 +19,11 @@ const Trending = () => {
         <>
             <div className='trending-wrapper'>
                 <Container >
-                    <div className="trending-text-wrapper">
-                        <h1>AMEY Trending Collections</h1>
-                        <h1>Trending Products</h1>
-                    </div>
+                    <Headertext />
                     <div className="trending-slider-wrapper">
                         <Container className='container-trend'>
                             <div className="swiper-trend-prev">
                                 <FontAwesomeIcon icon={faChevronLeft} />
-
                             </div>
                             <div className="swiper-trend-next">
                                 <FontAwesomeIcon icon={faChevronRight} />
