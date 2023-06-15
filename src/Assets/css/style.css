@@ -1638,7 +1638,7 @@ img {
 }
 .testimonial-section .testimonial-wrapper .circle-image {
   background-image: url(../img/testimonial/Group340.png);
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
@@ -1655,8 +1655,8 @@ img {
 }
 .testimonial-section .testimonial-wrapper .circle-image .mySwiper .testimonial-thumb-images:nth-child(2) {
   position: absolute;
-  left: 5%;
-  top: 5%;
+  left: 15%;
+  top: 8%;
 }
 .testimonial-section .testimonial-wrapper .circle-image .mySwiper .testimonial-thumb-images:nth-child(3) {
   position: absolute;
@@ -1684,9 +1684,12 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  right: 10%;
-  top: 90%;
+  left: 50%;
+  top: 95% !important;
   z-index: 9;
+}
+.testimonial-section .testimonial-wrapper .slider-wrapper .swiper .swiper-button-prev::after {
+  content: "";
 }
 .testimonial-section .testimonial-wrapper .slider-wrapper .swiper .swiper-button-next {
   position: absolute;
@@ -1696,8 +1699,12 @@ img {
   color: #18181b;
   height: 40px;
   border-radius: 50%;
-  right: -40px;
+  top: 95% !important;
+  left: 60% !important;
   z-index: 9;
+}
+.testimonial-section .testimonial-wrapper .slider-wrapper .swiper .swiper-button-next::after {
+  content: "";
 }
 .testimonial-section .testimonial-wrapper .slider-wrapper .swiper .swiper-wrapper .slide-wrapper-single {
   line-height: 20px;
@@ -1719,6 +1726,64 @@ img {
 .testimonial-section .testimonial-wrapper .slider-wrapper .swiper .swiper-wrapper .swiper-slide-image {
   width: 200px;
   height: 200px;
+}
+
+.blog-wrapper {
+  margin: 50px 0;
+}
+.blog-wrapper .blog-slider-wrapper .custom-card {
+  padding: 24px;
+  background-color: #f5f5f4;
+}
+.blog-wrapper .blog-slider-wrapper .custom-card .image-container {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+  border-radius: 5px;
+}
+.blog-wrapper .blog-slider-wrapper .custom-card .card-image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s;
+}
+.blog-wrapper .blog-slider-wrapper .custom-card:hover .card-image {
+  transform: scale(1.1);
+}
+.blog-wrapper .blog-slider-wrapper .custom-card .card-body {
+  text-align: center;
+  border: none;
+}
+.blog-wrapper .blog-slider-wrapper .custom-card .card-body .category-text {
+  color: #71717a;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+.blog-wrapper .blog-slider-wrapper .custom-card .card-body h4 {
+  color: #18181b;
+  font-family: "Libre Baskerville";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+.blog-wrapper .blog-slider-wrapper .custom-card .card-body h4 .border-bottom {
+  position: absolute;
+  border-bottom: 1px solid #71717a;
+  left: 50%;
+  right: 30%;
+}
+.blog-wrapper .blog-slider-wrapper .custom-card .card-body p {
+  color: #71717a;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
 }
 
 /*------------=======  Rsponsive  ======------------*/

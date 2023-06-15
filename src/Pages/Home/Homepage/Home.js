@@ -8,6 +8,7 @@ import Trending from '../Trending/Trending';
 import Promotion from '../Promotion/Promotion';
 import HotDeal from '../HotDeal/HotDeal';
 import Testimonial from '../Testimonial/Testimonial';
+import BlogPost from '../BlogPost/BlogPost';
 
 
 const Home = () => {
@@ -21,7 +22,8 @@ const Home = () => {
             <Trending></Trending>
             <Promotion></Promotion>
             <HotDeal></HotDeal>
-            <Testimonial/>
+            <Testimonial />
+            <BlogPost />
         </>
     );
 };

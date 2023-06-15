@@ -1672,7 +1672,7 @@ img {
     z-index: 1;
     .circle-image {
       background-image: url(../img/testimonial/Group340.png);
-      background-size: cover;
+      background-size: contain;
       background-position: center center;
       background-repeat: no-repeat;
       position: relative;
@@ -1688,8 +1688,8 @@ img {
           }
           &:nth-child(2) {
             position: absolute;
-            left: 5%;
-            top: 5%;
+            left: 15%;
+            top: 8%;
           }
           &:nth-child(3) {
             position: absolute;
@@ -1720,9 +1720,12 @@ img {
           width: 40px;
           height: 40px;
           border-radius: 50%;
-          right: 10%;
-          top: 90%;
+          left: 50%;
+          top: 95% !important;
           z-index: 9;
+          &::after {
+            content: "";
+          }
         }
 
         .swiper-button-next {
@@ -1733,9 +1736,14 @@ img {
           color: #18181b;
           height: 40px;
           border-radius: 50%;
-          right: -40px;
+          top: 95% !important;
+          left: 60% !important;
           z-index: 9;
+          &::after {
+            content: "";
+          }
         }
+
         .swiper-wrapper {
           .slide-wrapper-single {
             line-height: 20px;
@@ -1760,6 +1768,77 @@ img {
             width: 200px;
             height: 200px;
           }
+        }
+      }
+    }
+  }
+}
+
+//Blog
+.blog-wrapper {
+  margin: 50px 0;
+  .blog-slider-wrapper {
+    .custom-card {
+      padding: 24px;
+      background-color: #f5f5f4;
+      .image-container {
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s;
+
+        border-radius: 5px;
+      }
+      .card-image {
+        width: 100%;
+        object-fit: cover;
+        transition: transform 0.3s;
+      }
+      &:hover {
+        .card-image {
+          transform: scale(1.1);
+        }
+      }
+      .card-body {
+        text-align: center;
+        border: none;
+
+        .category-text {
+          color: #71717a;
+          font: {
+            family: "Raleway";
+            weight: 400;
+            size: 18px;
+          }
+          line-height: 27px;
+        }
+        h4 {
+          color: #18181b;
+          font: {
+            family: "Libre Baskerville";
+            weight: 400;
+            size: 20px;
+          }
+          line-height: 30px;
+          position: relative;
+          padding-bottom: 16px;
+          margin-bottom: 16px;
+          .border-bottom {
+            position: absolute;
+            border-bottom: 1px solid #71717a;
+            left: 50%;
+            right: 30%;
+          }
+        }
+
+        p {
+          color: #71717a;
+          font: {
+            family: "Raleway";
+            weight: 400;
+            size: 16px;
+          }
+          line-height: 24px;
+          margin-bottom: 24px;
         }
       }
     }

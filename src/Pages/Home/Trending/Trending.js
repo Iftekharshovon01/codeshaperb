@@ -99,8 +99,6 @@ const Trending = () => {
                         </Container>
                     </div>
                 </Container>
-
-
             </div>
         </>
     );

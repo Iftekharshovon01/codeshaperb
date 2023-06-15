@@ -35,11 +35,11 @@ const Testimonial = () => {
 
   return (
     <div className="testimonial-section ptb-100">
-      <Container className="testimonial-wrapper" key={key}>
-        <Headertext content={content} />
+      <Container className="testimonial-wrapper" >
+        <Headertext content={content}  key={key}/>
         <Row>
           <Col md={6}>
-            <div className="circle-image ">
+            <div className="circle-image" >
               <Swiper
                 onSwiper={setThumbsSwiper}
                 loop={true}
@@ -52,7 +52,10 @@ const Testimonial = () => {
               >
                 {images.map((image) => {
                   return (
-                    <SwiperSlide className="testimonial-thumb-images">
+                    <SwiperSlide className="testimonial-thumb-images" style={{
+                  "width": "70px",
+                  "margin": "0px",
+                }}>
                       <img src={image} alt="" />
                     </SwiperSlide>
                   );
@@ -63,21 +66,15 @@ const Testimonial = () => {
           <Col md={6}>
             <div className="slider-wrapper">
               <Swiper
-                style={{
-                  "--swiper-navigation-color": "#fff",
-                  "--swiper-pagination-color": "#fff",
-                }}
+                
                 loop={true}
                 spaceBetween={10}
-                // navigation={true}
                 navigation={{
                   nextEl: ".swiper-button-next",
                   prevEl: ".swiper-button-prev",
                   disabledClass: "swiper-button-disabled",
                 }}
-                // thumbs={{
-                //   swiper: thumbsSwiper,
-                // }}
+                
                 thumbs={{
                   swiper:
                     thumbsSwiper && !thumbsSwiper.destroyed
@@ -87,15 +84,17 @@ const Testimonial = () => {
                 modules={[FreeMode, Navigation, Thumbs]}
                 className="mySwiper2"
               >
-                <div className="swiper-button-prev">
-                  <FontAwesomeIcon icon={faChevronLeft} />
-                </div>
-                <div className="swiper-button-next">
-                  <FontAwesomeIcon icon={faChevronRight} />
+                <div className="buttons-swiper">
+                    <div className="swiper-button-prev">
+                      <FontAwesomeIcon icon={faChevronLeft} />
+                    </div>
+                    <div className="swiper-button-next">
+                      <FontAwesomeIcon icon={faChevronRight} />
+                    </div>
                 </div>
                 {images.map((image) => {
                   return (
-                    <SwiperSlide>
+                    <SwiperSlide >
                       <div className="slide-wrapper-single">
                         <div className="swiper-slide-content">
                           <FontAwesomeIcon
