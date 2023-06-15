@@ -1510,7 +1510,7 @@ img {
 }
 
 @keyframes plusAnimate {
-  0%, 100% {
+  100% {
     width: 100%;
     height: 100%;
     opacity: 1;
@@ -1673,17 +1673,50 @@ img {
   left: 75%;
   top: 40%;
 }
-.testimonial-section .testimonial-wrapper .slider-wrapper .mySwiper2 .slide-wrapper-single {
+.testimonial-section .testimonial-wrapper .slider-wrapper .swiper {
+  position: relative;
+}
+.testimonial-section .testimonial-wrapper .slider-wrapper .swiper .swiper-button-prev {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ecfeff;
+  color: #18181b;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  right: 10%;
+  top: 90%;
+  z-index: 9;
+}
+.testimonial-section .testimonial-wrapper .slider-wrapper .swiper .swiper-button-next {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ecfeff;
+  width: 40px;
+  color: #18181b;
+  height: 40px;
+  border-radius: 50%;
+  right: -40px;
+  z-index: 9;
+}
+.testimonial-section .testimonial-wrapper .slider-wrapper .swiper .swiper-wrapper .slide-wrapper-single {
   line-height: 20px;
 }
-.testimonial-section .testimonial-wrapper .slider-wrapper .mySwiper2 .slide-wrapper-single .swiper-slide-content .icon {
+.testimonial-section .testimonial-wrapper .slider-wrapper .swiper .swiper-wrapper .slide-wrapper-single .swiper-slide-content .icon {
   height: 60px;
   width: 50px;
 }
-.testimonial-section .testimonial-wrapper .slider-wrapper .mySwiper2 .slide-wrapper-single .swiper-slide-content h4 {
+.testimonial-section .testimonial-wrapper .slider-wrapper .swiper .swiper-wrapper .slide-wrapper-single .swiper-slide-content h6 {
+  color: #18181b;
+  line-height: 20px;
+}
+.testimonial-section .testimonial-wrapper .slider-wrapper .swiper .swiper-wrapper .slide-wrapper-single .swiper-slide-content h4 {
   padding-top: 20px;
 }
-.testimonial-section .testimonial-wrapper .slider-wrapper .mySwiper2 .swiper-slide-image {
+.testimonial-section .testimonial-wrapper .slider-wrapper .swiper .swiper-wrapper .slide-wrapper-single .swiper-slide-content p {
+  color: #71717a;
+}
+.testimonial-section .testimonial-wrapper .slider-wrapper .swiper .swiper-wrapper .swiper-slide-image {
   width: 200px;
   height: 200px;
 }
