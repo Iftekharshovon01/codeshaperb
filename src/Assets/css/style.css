@@ -1731,6 +1731,55 @@ img {
 .blog-wrapper {
   margin: 50px 0;
 }
+.blog-wrapper .news-letter {
+  background: url(/src/Assets/img/blog/news-letter.png);
+  text-align: center;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.blog-wrapper .news-letter h4 {
+  color: #fafafa;
+  font-family: "Libre Baskerville";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 42px;
+}
+.blog-wrapper .news-letter h6 {
+  color: #fafafa;
+  margin-bottom: 24px;
+  font-family: "Libre Baskerville";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+.blog-wrapper .news-letter .control-form {
+  display: flex;
+  width: 85%;
+  background-color: transparent;
+  border: 1px solid #fafafa;
+  color: #fafafa;
+  padding: 10px 20px;
+}
+.blog-wrapper .news-letter .control-form:focus {
+  outline: none;
+  border: 1px solid #fafafa;
+}
+.blog-wrapper .news-letter .button-white {
+  margin-top: 50px;
+  background: white;
+  transition: 0.3s ease-in-out;
+  border: #fafafa;
+  border: 1px solid #fafafa;
+}
+.blog-wrapper .news-letter .button-white:hover {
+  background: transparent;
+  color: #fafafa;
+  border: 1px solid #fafafa;
+  transition: 0.3s ease-in-out;
+}
 .blog-wrapper .blog-slider-wrapper .custom-card {
   padding: 24px;
   background-color: #f5f5f4;
@@ -1739,7 +1788,6 @@ img {
   position: relative;
   overflow: hidden;
   transition: transform 0.3s;
-  border-radius: 5px;
 }
 .blog-wrapper .blog-slider-wrapper .custom-card .card-image {
   width: 100%;
@@ -1763,19 +1811,11 @@ img {
 }
 .blog-wrapper .blog-slider-wrapper .custom-card .card-body h4 {
   color: #18181b;
+  margin-bottom: 24px;
   font-family: "Libre Baskerville";
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  position: relative;
-  padding-bottom: 16px;
-  margin-bottom: 16px;
-}
-.blog-wrapper .blog-slider-wrapper .custom-card .card-body h4 .border-bottom {
-  position: absolute;
-  border-bottom: 1px solid #71717a;
-  left: 50%;
-  right: 30%;
 }
 .blog-wrapper .blog-slider-wrapper .custom-card .card-body p {
   color: #71717a;
@@ -1784,6 +1824,63 @@ img {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 24px;
+  padding-top: 24px;
+  position: relative;
+}
+.blog-wrapper .blog-slider-wrapper .custom-card .card-body p::before {
+  content: "";
+  position: absolute;
+  background: #71717a;
+  top: 0px;
+  height: 1px;
+  width: 55px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.insta-image-wrapper h3 {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  font-family: "Libre Baskerville";
+  font-size: 48px;
+  font-weight: 400;
+}
+.insta-image-wrapper .insta-card:nth-child(even) {
+  margin-top: 30px;
+}
+
+.insta-image-single {
+  position: relative;
+}
+.insta-image-single .insta-icon {
+  color: #ffffff;
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.insta-image-single::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  opacity: 0;
+}
+.insta-image-single:hover .insta-icon {
+  opacity: 1;
+}
+.insta-image-single:hover::before {
+  opacity: 1;
 }
 
 /*------------=======  Rsponsive  ======------------*/

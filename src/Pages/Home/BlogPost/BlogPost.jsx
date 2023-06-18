@@ -1,12 +1,11 @@
 import React from 'react';
 import Headertext from '../../../Component/Headertext/Headertext';
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Image, Row } from 'react-bootstrap';
 import { SwiperSlide ,  Swiper } from 'swiper/react';
-import ProductCard from '../../../Component/ProductCard/ProductCard';
 
 import shopping from '../../../Assets/img/blog/shopping.jpg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 const BlogPost = () => {
@@ -20,7 +19,14 @@ const BlogPost = () => {
             <div className="blog-slider-wrapper">
                 <Container className='container-blog'>
                     <Row>
-                        <Col md={4}><ProductCard/></Col>
+                        <Col md={4}>
+                            <div className="news-letter">
+                                <h4 className='header-text'>Subscribe Our Newsletter</h4>
+                                <h6 className='discount-text'>To Get 20% Discount</h6>
+                                <input className='control-form' type="email" placeholder='Email Address' />
+                                <Link className='button-white'>Subscribe</Link>    
+                            </div>
+                        </Col>
                         <Col md={8}>
                             <Swiper
                             spaceBetween={25}
@@ -29,44 +35,45 @@ const BlogPost = () => {
                             onSwiper={(swiper) => console.log(swiper)}
                             >
                                 <SwiperSlide>
-                                  <Card className="custom-card">
-                                    <div className="image-container">
-                                        <img src={shopping} alt="Card Image" className="card-image"/>
-                                    </div>
-                                    <Card.Body>
+                                    <div className="custom-card">
+                                        <div className="image-container">
+                                            <Image src={shopping} alt="Card Image" className="card-image" />
+                                        </div>
+                                        <div className="card-body">
                                             <h6 className='category-text'>News</h6>
-                                            <h4 className='border-bottom'>A happy shopping makes a happy life</h4>
+                                            <h4>A happy shopping makes a happy life</h4>
                                             <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis llamco est sit aliqua dolor do amet.</p>
-                                       <Link className='button-white'>Read More</Link>
-                                    </Card.Body>
-                                    </Card>
+                                            <Link className='button-white'>Read More</Link>
+                                        </div>
+                                    </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                  <Card className="custom-card">
-                                    <div className="image-container">
-                                        <img src={shopping} alt="Card Image" className="card-image"/>
-                                    </div>
-                                    <Card.Body>
+                                    <div className="custom-card">
+                                        <div className="image-container">
+                                            <Image src={shopping} alt="Card Image" className="card-image" />
+                                        </div>
+                                        <div className="card-body">
                                             <h6 className='category-text'>News</h6>
-                                            <h4 className='border-bottom'>A happy shopping makes a happy life</h4>
+                                            <h4>A happy shopping makes a happy life</h4>
                                             <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis llamco est sit aliqua dolor do amet.</p>
-                                       <Link className='button-white'>Read More</Link>
-                                    </Card.Body>
-                                    </Card>
+                                            <Link className='button-white'>Read More</Link>
+                                        </div>
+                                    </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                  <Card className="custom-card">
-                                    <div className="image-container">
-                                        <img src={shopping} alt="Card Image" className="card-image"/>
-                                    </div>
-                                    <Card.Body>
+                                    <div className="custom-card">
+                                        <div className="image-container">
+                                            <Image src={shopping} alt="Card Image" className="card-image" />
+                                        </div>
+                                        <div className="card-body">
                                             <h6 className='category-text'>News</h6>
-                                            <h4 className='border-bottom'>A happy shopping makes a happy life</h4>
+                                            <h4>A happy shopping makes a happy life</h4>
                                             <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis llamco est sit aliqua dolor do amet.</p>
-                                       <Link className='button-white'>Read More</Link>
-                                    </Card.Body>
-                                    </Card>
+                                            <Link className='button-white'>Read More</Link>
+                                        </div>
+                                    </div>
                                 </SwiperSlide>
+
                             </Swiper>
                         </Col>
                     </Row>

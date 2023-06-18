@@ -9,6 +9,7 @@ import Promotion from '../Promotion/Promotion';
 import HotDeal from '../HotDeal/HotDeal';
 import Testimonial from '../Testimonial/Testimonial';
 import BlogPost from '../BlogPost/BlogPost';
+import InstaPost from '../Instragram/InstaPost';
 
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
             <HotDeal></HotDeal>
             <Testimonial />
             <BlogPost />
+            <InstaPost />
         </>
     );
 };

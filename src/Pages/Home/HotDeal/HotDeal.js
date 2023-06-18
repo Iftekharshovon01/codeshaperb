@@ -11,7 +11,7 @@ import "swiper/css/thumbs";
 
 // import required modules
 import { Keyboard, Mousewheel, Navigation, Pagination } from "swiper";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container} from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
