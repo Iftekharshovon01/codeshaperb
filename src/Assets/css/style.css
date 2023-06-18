@@ -1849,11 +1849,10 @@ img {
 .insta-image-wrapper .insta-card:nth-child(even) {
   margin-top: 30px;
 }
-
-.insta-image-single {
+.insta-image-wrapper .insta-image-single {
   position: relative;
 }
-.insta-image-single .insta-icon {
+.insta-image-wrapper .insta-image-single .insta-icon {
   color: #ffffff;
   font-size: 36px;
   position: absolute;
@@ -1864,7 +1863,7 @@ img {
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
-.insta-image-single::before {
+.insta-image-wrapper .insta-image-single::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -1876,11 +1875,92 @@ img {
   z-index: 0;
   opacity: 0;
 }
-.insta-image-single:hover .insta-icon {
+.insta-image-wrapper .insta-image-single:hover .insta-icon {
   opacity: 1;
 }
-.insta-image-single:hover::before {
+.insta-image-wrapper .insta-image-single:hover::before {
   opacity: 1;
+}
+
+.footer {
+  margin-top: 50px;
+}
+.footer .footer-wrapper {
+  padding-top: 50px;
+  background-color: #18181b;
+}
+.footer .footer-wrapper p {
+  padding-top: 32px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Raleway";
+  line-height: 30px;
+  color: #fafafa;
+}
+.footer .footer-wrapper .social {
+  display: flex;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.footer .footer-wrapper .social li {
+  padding: 8px 11px;
+  background-color: #fafafa;
+  margin: 6px;
+}
+.footer .footer-wrapper .social li:hover {
+  fill: white;
+  stroke: #fafafa;
+  background: #00acee;
+}
+.footer .footer-wrapper .menue-item-single p {
+  font-family: "Libre Baskerville";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  color: #fafafa;
+}
+.footer .footer-wrapper .menue-item-single ul {
+  padding: 0px;
+}
+.footer .footer-wrapper .menue-item-single ul li {
+  padding-top: 5px;
+  position: relative;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fafafa;
+}
+.footer .footer-wrapper .menue-item-single ul li .icon-menue {
+  position: absolute;
+  left: -30px;
+  top: 10px;
+}
+.footer .footer-wrapper .payment {
+  text-align: center;
+}
+.footer .footer-wrapper .payment p {
+  display: inline-block;
+  color: #fafafa;
+}
+.footer .footer-wrapper .payment ul {
+  display: inline-flex;
+}
+.footer .footer-wrapper .payment ul li {
+  padding: 5px 10px;
+  background: #fafafa;
+  margin: 3px;
+}
+.footer .copy-right-wrapper {
+  background-color: #71717a;
+}
+.footer .copy-right-wrapper .copy-right {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .copy-right-wrapper .copy-right p {
+  color: #fafafa;
+  padding-top: 15px;
 }
 
 /*------------=======  Rsponsive  ======------------*/

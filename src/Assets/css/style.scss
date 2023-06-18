@@ -1920,39 +1920,128 @@ img {
       margin-top: 30px;
     }
   }
-}
-
-.insta-image-single {
-  position: relative;
-  .insta-icon {
-    color: #ffffff;
-    font-size: 36px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-  }
-  &::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: rgba($color: #000000, $alpha: 0.3);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    opacity: 0;
-  }
-  &:hover {
+  .insta-image-single {
+    position: relative;
     .insta-icon {
-      opacity: 1;
+      color: #ffffff;
+      font-size: 36px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      opacity: 0;
+      transition: 0.3s ease-in-out;
     }
     &::before {
-      opacity: 1;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: #000000, $alpha: 0.3);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+      opacity: 0;
+    }
+    &:hover {
+      .insta-icon {
+        opacity: 1;
+      }
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+//Footer
+.footer {
+  margin-top: 50px;
+
+  .footer-wrapper {
+    padding-top: 50px;
+    background-color: #18181b;
+    p {
+      padding-top: 32px;
+      font: {
+        size: 20px;
+        weight: 400;
+        family: "Raleway";
+      }
+      line-height: 30px;
+      color: #fafafa;
+    }
+    .social {
+      display: flex;
+      margin-left: 0px;
+      padding-left: 0px;
+      li {
+        padding: 8px 11px;
+        background-color: #fafafa;
+
+        margin: 6px;
+        &:hover {
+          fill: white;
+          stroke: #fafafa;
+          background: #00acee;
+        }
+      }
+    }
+    .menue-item-single {
+      p {
+        font-family: "Libre Baskerville";
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 42px;
+
+        color: #fafafa;
+      }
+      ul {
+        padding: 0px;
+        li {
+          padding-top: 5px;
+          position: relative;
+          font-family: "Raleway";
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 30px;
+          color: #fafafa;
+          .icon-menue {
+            position: absolute;
+            left: -30px;
+            top: 10px;
+          }
+        }
+      }
+    }
+    .payment {
+      text-align: center;
+      p {
+        display: inline-block;
+        color: #fafafa;
+      }
+      ul {
+        display: inline-flex;
+        li {
+          padding: 5px 10px;
+
+          background: #fafafa;
+          margin: 3px;
+        }
+      }
+    }
+  }
+  .copy-right-wrapper {
+    background-color: #71717a;
+    .copy-right {
+      display: flex;
+      justify-content: space-between;
+      p {
+        color: #fafafa;
+        padding-top: 15px;
+      }
     }
   }
 }
