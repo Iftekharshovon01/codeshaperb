@@ -12,42 +12,42 @@ const InstaPost = () => {
                 <div className="insta-image-wrapper">
                     <h3>#AMEY</h3>
                     <Row>
-                        <Col md={2} className='insta-card'>
+                        <Col md={2} sm={2} className='insta-card'>
                             <div className="insta-image-single">
                                 <Image src={insta1} />
                                 <Link className='insta-icon'><FontAwesomeIcon icon={faVolleyball} />
                                 </Link>
                             </div>
                         </Col>
-                        <Col md={2} className='insta-card'>
+                        <Col md={2} sm={2} className='insta-card'>
                             <div className="insta-image-single">
                                 <Image src={insta1} />
                                 <Link className='insta-icon'><FontAwesomeIcon icon={faVolleyball} />
                                 </Link>
                             </div>
                         </Col>
-                        <Col md={2} className='insta-card'>
+                        <Col md={2} sm={2} className='insta-card'>
                             <div className="insta-image-single">
                                 <Image src={insta1} />
                                 <Link className='insta-icon'><FontAwesomeIcon icon={faVolleyball} />
                                 </Link>
                             </div>
                         </Col>
-                        <Col md={2} className='insta-card'>
+                        <Col md={2} sm={2} className='insta-card'>
                             <div className="insta-image-single">
                                 <Image src={insta1} />
                                 <Link className='insta-icon'><FontAwesomeIcon icon={faVolleyball} />
                                 </Link>
                             </div>
                         </Col>
-                        <Col md={2} className='insta-card'>
+                        <Col md={2} sm={2} className='insta-card'>
                             <div className="insta-image-single">
                                 <Image src={insta1} />
                                 <Link className='insta-icon'><FontAwesomeIcon icon={faVolleyball} />
                                 </Link>
                             </div>
                         </Col>
-                        <Col md={2} className='insta-card'>
+                        <Col md={2} sm={2} className='insta-card'>
                             <div className="insta-image-single">
                                 <Image src={insta1} />
                                 <Link className='insta-icon'><FontAwesomeIcon icon={faVolleyball} />

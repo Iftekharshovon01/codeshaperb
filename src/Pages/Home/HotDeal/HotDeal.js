@@ -11,7 +11,7 @@ import "swiper/css/thumbs";
 
 // import required modules
 import { Keyboard, Mousewheel, Navigation, Pagination } from "swiper";
-import { Container} from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -60,6 +60,26 @@ export default function HotDeal() {
                                 </Row>
                             </SwiperSlide>
                         })} */}
+                        <SwiperSlide >
+                            <div className="slider-component-wrapper">
+                                <div className="carsoul-wrapper py-5">
+                                    <MyCarousel />
+                                </div>
+                                <div className="featureProduct-wrapper">
+                                    <FeatureProductdetails />
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide >
+                            <div className="slider-component-wrapper">
+                                <div className="carsoul-wrapper py-5">
+                                    <MyCarousel />
+                                </div>
+                                <div className="featureProduct-wrapper">
+                                    <FeatureProductdetails />
+                                </div>
+                            </div>
+                        </SwiperSlide>
                         <SwiperSlide >
                             <div className="slider-component-wrapper">
                                 <div className="carsoul-wrapper py-5">

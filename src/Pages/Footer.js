@@ -53,7 +53,7 @@ const Footer = () => {
                         </Col>
                         <Col md={8} >
                             <Row >
-                                <Col md={4}>
+                                <Col md={4} sm={6}>
                                     <div className="menue-item-single">
                                         <p>Information</p>
                                         <ul>

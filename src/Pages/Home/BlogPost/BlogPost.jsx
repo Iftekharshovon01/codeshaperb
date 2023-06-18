@@ -2,10 +2,7 @@ import React from 'react';
 import Headertext from '../../../Component/Headertext/Headertext';
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import { SwiperSlide ,  Swiper } from 'swiper/react';
-
 import shopping from '../../../Assets/img/blog/shopping.jpg';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 const BlogPost = () => {
@@ -19,7 +16,7 @@ const BlogPost = () => {
             <div className="blog-slider-wrapper">
                 <Container className='container-blog'>
                     <Row>
-                        <Col md={4}>
+                        <Col md={4} sm={12} className='mt-3'>
                             <div className="news-letter">
                                 <h4 className='header-text'>Subscribe Our Newsletter</h4>
                                 <h6 className='discount-text'>To Get 20% Discount</h6>
@@ -27,8 +24,9 @@ const BlogPost = () => {
                                 <Link className='button-white'>Subscribe</Link>    
                             </div>
                         </Col>
-                        <Col md={8}>
+                        <Col md={8} sm={12} className='mt-3'>
                             <Swiper
+                            autoplay={ true}
                             spaceBetween={25}
                             slidesPerView={2}
                             onSlideChange={() => console.log('slide change')}
@@ -73,7 +71,6 @@ const BlogPost = () => {
                                         </div>
                                     </div>
                                 </SwiperSlide>
-
                             </Swiper>
                         </Col>
                     </Row>
